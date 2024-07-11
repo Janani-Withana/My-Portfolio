@@ -1506,12 +1506,12 @@ footer{
 }
 
 .footer-right-eye{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     box-shadow: -10px -15px 5px rgba(0, 0, 0, 0.349) inset;
     position: relative;
 }
 .footer-left-eye{
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     box-shadow: -10px -15px 5px rgba(0, 0, 0, 0.349) inset;
     position: relative;
 }

@@ -55,7 +55,7 @@ const projects = [
     boxId: 'project-box4',
     faviconSrc: prj4Favicon,
     title: 'Snap Mind',
-    description: 'SnapMind is a cutting-edge Android app powered by the Gemini Pro API, designed to enhance image intelligence experience. SnapMind is the perfect tool for quick and precise image analysis.',
+    description: 'SnapMind is a cutting-edge Android app powered by the Gemini Pro API, designed using Kotlin to enhance image intelligence experience. SnapMind is the perfect tool for quick and precise image analysis.',
     githubLink: 'https://github.com/Janani-Withana/SnapMind',
     //liveLink: '',
     imageSrc: prj4Image
