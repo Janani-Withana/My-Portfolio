@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
 
-function App() {
+import React, { useEffect } from 'react';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import PortfolioPage from './pages/PortfolioPage';
+import SkillsPage from './pages/SkillsPage';
+import Footer from './components/Footer';
+import NavBar from './components/NavBar'; // Import NavBar component
+import 'aos/dist/aos.css';
+import './formatted.css'; // Import your CSS file for styling
+import AOS from 'aos';
+
+const App = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar/> {/* Use NavBar component */}
+      <HomePage />
+      <AboutPage />
+      <SkillsPage />
+      <PortfolioPage />
+      <Footer/>
     </div>
   );
 }
