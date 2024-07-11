@@ -92,7 +92,7 @@ const NavBar = () => {
             <Link to="projects" tabIndex="0" aria-label="projects menu button">&#60;/Projects&#62;</Link>
           </li>
           <li id="projects-mobile-tab" className="mobile-navbar-tabs-li projects">
-            <Link to="contact" tabIndex="0" aria-label="projects menu button">&#60;/Contact&#62;</Link>
+            <Link to="footer" tabIndex="0" aria-label="projects menu button">&#60;/Contact&#62;</Link>
           </li>
         </ul>
       </div>
