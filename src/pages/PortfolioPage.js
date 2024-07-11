@@ -7,15 +7,15 @@ import '../formatted.css'; // Import your CSS file for styling
 // Importing images
 import prj1Favicon from '../Assets/webp/NasaLogo.png';
 import prj2Favicon from '../Assets/webp/MovieTicketBookinglogo.png';
-import prj3Favicon from '../Assets/svg/aquaregia-favicon.svg';
-import prj4Favicon from '../Assets/webp/qr-favicon.webp';
+import prj3Favicon from '../Assets/webp/Sri GoviyaLogo.png';
+import prj4Favicon from '../Assets/webp/SnapMindLogo.png';
 import prj5Favicon from '../Assets/ico/netflixfavicon.ico';
 import prj6Favicon from '../Assets/webp/axocean-favicon.webp';
 
 import prj1Image from '../Assets/webp/NasaLandingPage.PNG';
 import prj2Image from '../Assets/webp/MovieTicketBooking2.jpg';
-import prj3Image from '../Assets/webp/Aquaregia-project.webp';
-import prj4Image from '../Assets/webp/QRgeneratorProject.webp';
+import prj3Image from '../Assets/webp/SriGoviyaFlyer.png';
+import prj4Image from '../Assets/webp/SnapMindFlyer.png';
 import prj5Image from '../Assets/webp/NetflixCloneProject.webp';
 import prj6Image from '../Assets/webp/AXOCEAN-project.webp';
 
@@ -40,26 +40,26 @@ const projects = [
     //liveLink: '',
     imageSrc: prj2Image
   },
-  // {
-  //   boxClass: 'project-box3',
-  //   boxId: 'project-box3',
-  //   faviconSrc: prj3Favicon,
-  //   title: 'Aquaregia',
-  //   description: 'A website for University Maharaja College fest "Aquaregia" for event registrations.',
-  //   githubLink: 'https://github.com/vinodjangid07/Aquaregia',
-  //   liveLink: 'https://vinodjangid.site/Aquaregia/',
-  //   imageSrc: prj3Image
-  // },
-  // {
-  //   boxClass: 'project-box4',
-  //   boxId: 'project-box4',
-  //   faviconSrc: prj4Favicon,
-  //   title: 'QR Generator',
-  //   description: 'A webpage to make a QR Code from text using API.',
-  //   githubLink: 'https://github.com/vinodjangid07/QR-Generator',
-  //   liveLink: 'https://vinodjangid.site/QR-Generator/',
-  //   imageSrc: prj4Image
-  // },
+  {
+    boxClass: 'project-box3',
+    boxId: 'project-box3',
+    faviconSrc: prj3Favicon,
+    title: 'Sri Goviya',
+    description: ' A Mobile app developed with Flutter-Firebase enabling farmers to sell harvests directly to buyers. Offers tools for crop management, weather forecasts, pest control, and more to enhance the farming experience.',
+    githubLink: 'https://github.com/Pamitha-Pankaja/UEE-WE-53',
+    //liveLink: '',
+    imageSrc: prj3Image
+  },
+  {
+    boxClass: 'project-box4',
+    boxId: 'project-box4',
+    faviconSrc: prj4Favicon,
+    title: 'Snap Mind',
+    description: 'SnapMind is a cutting-edge Android app powered by the Gemini Pro API, designed to enhance image intelligence experience. SnapMind is the perfect tool for quick and precise image analysis.',
+    githubLink: 'https://github.com/Janani-Withana/SnapMind',
+    //liveLink: '',
+    imageSrc: prj4Image
+  },
   // {
   //   boxClass: 'project-box5',
   //   boxId: 'project-box5',
