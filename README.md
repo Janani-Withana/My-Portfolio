@@ -2,7 +2,9 @@
 
 Welcome to my portfolio! This is a modern UI React application showcasing my recent projects as a Mobile and Web Developer. The portfolio includes detailed information about each project, along with images and descriptions.
 
-![Portfolio Landing Page](./path/to/landing-page-image.png)
+## Live Demo
+
+The portfolio is published and live on Vercel. You can view it here: [My Portfolio](https://janani-withana-portfolio.vercel.app/)
 
 ## Features
 
@@ -17,10 +19,6 @@ Welcome to my portfolio! This is a modern UI React application showcasing my rec
 - **CSS**: For styling the application and ensuring a modern, responsive design.
 - **React Router**: For handling navigation within the app.
 - **Styled-components**: For writing CSS-in-JS and keeping the concerns of styling and element architecture separated.
-
-## Live Demo
-
-The portfolio is published and live on Vercel. You can view it here: [My Portfolio](https://janani-withana-portfolio.vercel.app/)
 
 ## Attribution
 
