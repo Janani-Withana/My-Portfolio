@@ -2,7 +2,7 @@
 
 import React from 'react';
 import '../formatted.css'; // Import your CSS file for styling
-import ProfileImage from '../Assets/png/nav-avatar1.png';
+import ProfileImage from '../Assets/png/jananiprofile2.png';
 import resumePDF from '../Assets/pdf/Withana J.W.J Resume.pdf';
 
 const AboutPage = () => {
