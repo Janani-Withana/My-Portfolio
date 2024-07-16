@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import githubSVG from '../Assets/svg/github.svg'
-import prj1Favicon from '../Assets/webp/pexelicon-favicon.webp'
 import '../formatted.css'; // Import your CSS file for styling
 
 const ProjectCard = ({ project }) => {

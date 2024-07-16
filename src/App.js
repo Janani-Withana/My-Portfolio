@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <div>
-      <NavBar/> {/* Use NavBar component */}
+      <NavBar/>
       <HomePage />
       <AboutPage />
       <SkillsPage />

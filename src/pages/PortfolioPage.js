@@ -10,14 +10,12 @@ import prj2Favicon from '../Assets/webp/ThilinaLogo.png';
 import prj3Favicon from '../Assets/webp/MovieTicketBookinglogo.png';
 import prj4Favicon from '../Assets/webp/Sri GoviyaLogo.png';
 import prj5Favicon from '../Assets/webp/SnapMindLogo.png';
-import prj6Favicon from '../Assets/webp/axocean-favicon.webp';
 
 import prj1Image from '../Assets/webp/NasaLandingPage.PNG';
 import prj2Image from '../Assets/webp/ThilinaInstitute.png';
 import prj3Image from '../Assets/webp/MovieTicketBooking2.jpg';
 import prj4Image from '../Assets/webp/SriGoviyaFlyer.png';
 import prj5Image from '../Assets/webp/SnapMindFlyer.png';
-import prj6Image from '../Assets/webp/ThilinaInstitute.png';
 
 const projects = [
   {
@@ -70,17 +68,6 @@ const projects = [
     //liveLink: '',
     imageSrc: prj5Image
   },
-  
-  // {
-  //   boxClass: 'project-box6',
-  //   boxId: 'project-box6',
-  //   faviconSrc: prj6Favicon,
-  //   title: 'AXOCEAN',
-  //   description: 'E-commerce website frontend work to choose people their favorite design of product and redirect to flipkart shopping site.',
-  //   githubLink: 'https://github.com/vinodjangid07/AXOCEAN',
-  //   liveLink: 'https://www.vinodjangid.site/AXOCEAN/',
-  //   imageSrc: prj6Image
-  // }
 ];
 
 const PortfolioPage = () => {
