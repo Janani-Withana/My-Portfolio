@@ -919,14 +919,14 @@ noscript{
     transition-duration: .5s;
 }
 .dp img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 .dp::before{
     content: "";
     background-color: transparent;
-    height: 305px;
-    width: 305px;
+    height: 250px;
+    width: 250px;
     position: absolute;
     z-index: -2;
     box-shadow: 2px 2px 0px inset #8000ff,
@@ -937,8 +937,8 @@ noscript{
 .dp::after{
     content: "";
     background-color: transparent;
-    height: 305px;
-    width: 305px;
+    height: 250px;
+    width: 250px;
     position: absolute;
     z-index: -2;
     box-shadow: 2px 2px 0px inset transparent,
