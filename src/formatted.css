@@ -925,7 +925,7 @@ noscript{
     position: relative;
     z-index: 1;
     box-shadow: 0 0 20px 1px rgba(158, 137, 157, 0.75); /* White shadow border */
-    border-radius: 20px; /* Optional: Adds rounded corners */
+    border-radius: 30px; /* Optional: Adds rounded corners */
   }
 /* .dp::before{
     content: "";
