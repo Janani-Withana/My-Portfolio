@@ -918,13 +918,22 @@ noscript{
     position: relative;
     transition-duration: .5s;
 }
-.dp img{
+.dp img {
     width: 280px;
     height: 280px;
-}
-.dp::before{
+    display: block;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 20px 1px rgba(158, 137, 157, 0.75); /* White shadow border */
+    border-radius: 30px; /* Optional: Adds rounded corners */
+  }
+/* .dp::before{
     content: "";
-    background-color: transparent;
+    background: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent),
+    linear-gradient(to left, rgba(0, 0, 0, 0.9), transparent),
+    linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
     height: 280px;
     width: 280px;
     position: absolute;
@@ -945,7 +954,7 @@ noscript{
                 -2px -2px 0px inset #8000ff;
                 transition-duration: .5s;
 
-}
+} */
 /* hover effect on dp */
 .dp:hover::after{
     transform: translate(20px,20px);
