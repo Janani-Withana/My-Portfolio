@@ -23,7 +23,7 @@ const AboutPage = () => {
         <div className="info-dp-section">
           <div className="about-info">
             <p tabIndex="0">
-              Hi! My name is Janani. I'm an undergraduate student at SLIIT, pursuing Software Engineering. 
+              Hi! I'm Janani Withana, an undergraduate student at SLIIT, pursuing Software Engineering. 
               I've also gained practical experience as a trainee Software Engineer.
             </p>
             <br/>
