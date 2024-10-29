@@ -1,6 +1,6 @@
 # 🚀 My Portfolio
 
-Welcome to my portfolio! This is a modern UI React application showcasing my recent projects as a Mobile and Web Developer. Designed with a sleek and responsive interface that adjusts seamlessly across different screen sizes. The portfolio includes detailed information about each project, along with images and descriptions, linked directly to their respective demos and repositories. 
+Welcome to my portfolio! This is a modern UI React application showcasing my profile details and recent projects as a Mobile and Web Developer. Designed with a sleek and responsive interface that adjusts seamlessly across different screen sizes. The portfolio includes detailed information about each project, along with images and descriptions, linked directly to their respective demos and repositories. 
 
 ## 🌐 Live Demo
 
