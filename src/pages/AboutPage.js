@@ -4,10 +4,11 @@ import React from 'react';
 import '../formatted.css'; // Import your CSS file for styling
 import ProfileImage from '../Assets/png/dp.jpg';
 import resumePDF from '../Assets/pdf/Withana J.W.J Resume.pdf';
+import resumePDF1 from '../Assets/pdf/Withana J.W.J Resume1.pdf';
 
 const AboutPage = () => {
   const openURL = () => {
-    window.open(resumePDF, "_blank");
+    window.open(resumePDF1, "_blank");
   };
 
   return (
