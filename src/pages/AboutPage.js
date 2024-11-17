@@ -8,7 +8,7 @@ import resumePDF1 from '../Assets/pdf/Withana J.W.J Resume ATS Format.pdf';
 
 const AboutPage = () => {
   const openURL = () => {
-    window.open(resumePDF1, "_blank");
+    window.open(resumePDF, "_blank");
   };
 
   return (
