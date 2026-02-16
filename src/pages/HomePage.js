@@ -7,7 +7,6 @@ const HomePage = () => {
   useEffect(() => {
     AOS.init();
 
-    const audio = document.getElementById("audioPlayer");
     const loader = document.getElementById("preloader");
 
     const onLoad = () => {
@@ -77,17 +76,6 @@ const HomePage = () => {
     }
     if (soundToggleContainer) {
       soundToggleContainer.classList.toggle('soundmodeshow');
-    }
-  };
-
-  const playpause = () => {
-    const audio = document.getElementById('audioPlayer');
-    if (audio) {
-      if (document.getElementById('switchforsound').checked === false) {
-        audio.pause();
-      } else {
-        audio.play();
-      }
     }
   };
 

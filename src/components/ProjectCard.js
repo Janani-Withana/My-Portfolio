@@ -51,7 +51,7 @@ const ProjectCard = ({ project, index }) => {
         {project.imageSrc && (
           <div className="image-div">
             <div className="image-overlay"></div>
-            <img src={project.imageSrc} alt={`${project.title} preview image`} />
+            <img src={project.imageSrc} alt={`${project.title} preview`} />
           </div>
         )}
       </div>
