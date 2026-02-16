@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import ExperiencePage from './pages/ExperiencePage';
 import PortfolioPage from './pages/PortfolioPage';
 import SkillsPage from './pages/SkillsPage';
 import Footer from './components/Footer';
@@ -21,6 +22,7 @@ const App = () => {
       <NavBar/>
       <HomePage />
       <AboutPage />
+      <ExperiencePage />
       <SkillsPage />
       <PortfolioPage />
       <Footer/>

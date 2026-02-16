@@ -54,6 +54,9 @@ const NavBar = () => {
             <li className="about navbar-tabs-li">
               <Link to="about" smooth={true} duration={300} aria-label="About menu button">&#60;/AboutMe&#62;</Link>
             </li>
+            <li className="experience navbar-tabs-li">
+              <Link to="experience" smooth={true} duration={400} aria-label="Experience menu button">&#60;/Experience&#62;</Link>
+            </li>
             <li className="skills navbar-tabs-li">
               <Link to="skills" smooth={true} duration={500} aria-label="Skills menu button">&#60;/Skills&#62;</Link>
             </li>
@@ -84,6 +87,9 @@ const NavBar = () => {
           </li>
           <li id="aboutme-mobile-tab" className="mobile-navbar-tabs-li about">
             <Link to="about" tabIndex="0" aria-label="about menu button">&#60;/AboutMe&#62;</Link>
+          </li>
+          <li id="experience-mobile-tab" className="mobile-navbar-tabs-li experience">
+            <Link to="experience" tabIndex="0" aria-label="experience menu button">&#60;/Experience&#62;</Link>
           </li>
           <li id="skills-mobile-tab" className="mobile-navbar-tabs-li skills">
             <Link to="skills" tabIndex="0" aria-label="skills menu button">&#60;/Skills&#62;</Link>

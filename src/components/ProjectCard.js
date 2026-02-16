@@ -3,14 +3,34 @@ import PropTypes from 'prop-types';
 import githubSVG from '../Assets/svg/github.svg'
 import '../formatted.css'; // Import your CSS file for styling
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, index }) => {
   return (
-    <div data-aos="fade-up" className="project-box-wrapper">
-      <div className={`project-box ${project.boxClass}`} id={project.boxId}>
+    <div 
+      data-aos="fade-up" 
+      data-aos-delay={index * 100}
+      className="project-box-wrapper"
+    >
+      <div className={`project-box ${project.boxClass} ${!project.imageSrc ? 'no-image' : ''}`} id={project.boxId}>
         <div className="info-div">
-          <img src={project.faviconSrc} alt={`${project.title} favicon`} className="faviconforProject" />
+          <div className="project-header">
+            <img src={project.faviconSrc} alt={`${project.title} favicon`} className="faviconforProject" />
+            {project.category && (
+              <span className={`project-category-badge category-${project.category.toLowerCase()}`}>
+                {project.category}
+              </span>
+            )}
+          </div>
           <article className="ProjectHeading">{project.title}</article>
           <p className="ProjectDescription">{project.description}</p>
+          
+          {project.technologies && project.technologies.length > 0 && (
+            <div className="project-technologies">
+              {project.technologies.map((tech, idx) => (
+                <span key={idx} className="tech-tag">{tech}</span>
+              ))}
+            </div>
+          )}
+
           <div className="project-buttons">
             {project.githubLink && (
               <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="github-redirect" aria-label={`Visit ${project.title} on GitHub`}>
@@ -28,9 +48,12 @@ const ProjectCard = ({ project }) => {
             )}
           </div>
         </div>
-        <div className="image-div">
-          <img src={project.imageSrc} alt={`${project.title} website preview image`} />
-        </div>
+        {project.imageSrc && (
+          <div className="image-div">
+            <div className="image-overlay"></div>
+            <img src={project.imageSrc} alt={`${project.title} preview image`} />
+          </div>
+        )}
       </div>
     </div>
   );
@@ -45,8 +68,11 @@ ProjectCard.propTypes = {
     description: PropTypes.string.isRequired,
     githubLink: PropTypes.string,
     liveLink: PropTypes.string,
-    imageSrc: PropTypes.string.isRequired
-  }).isRequired
+    imageSrc: PropTypes.string,
+    category: PropTypes.string,
+    technologies: PropTypes.arrayOf(PropTypes.string)
+  }).isRequired,
+  index: PropTypes.number
 };
 
 export default ProjectCard;

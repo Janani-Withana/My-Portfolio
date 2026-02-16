@@ -169,9 +169,9 @@ const HomePage = () => {
 
         </article>
         <p id="info-para" data-aos="fade-up" data-aos-delay="600">
-          Web & Mobile Developer with a knack for design. I enjoy creating engaging UI, collaborating on projects, and bringing products to life.
+          <strong>Mobile Developer (React Native)</strong> specializing in iOS and Android mobile applications. I enjoy creating engaging UI, building scalable cross-platform solutions, and bringing products to life.
           <br /><br />
-          I value simplicity in content, clarity in design, and thoughtful user interactions, ensuring a seamless user experience.
+          As a <strong>Mobile Developer (React Native)</strong>, I value simplicity in content, clarity in design, and thoughtful user interactions, ensuring a seamless user experience across both platforms.
         </p>
         <div className="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
           <a href="mailto:jananijayasuriya330@gmail.com" tabIndex="-1">

@@ -3,8 +3,9 @@
 import React from 'react';
 import '../formatted.css'; // Import your CSS file for styling
 import ProfileImage from '../Assets/png/dp.jpg';
-import resumePDF from '../Assets/pdf/Withana J.W.J Resume.pdf';
-import resumePDF1 from '../Assets/pdf/Withana J.W.J Resume ATS Format.pdf';
+import resumePDF from '../Assets/pdf/Janani-Withana-Mobile-Developer.pdf';
+import resumePDF1 from '../Assets/pdf/Withana J.W.J Resume.pdf';
+import resumePDF2 from '../Assets/pdf/Withana J.W.J Resume ATS Format.pdf';
 
 const AboutPage = () => {
   const openURL = () => {
@@ -24,18 +25,18 @@ const AboutPage = () => {
         <div className="info-dp-section">
           <div className="about-info">
             <p tabIndex="0">
-              Hi! I'm Janani Withana, an undergraduate student at SLIIT, pursuing Software Engineering. 
-              I've also gained practical experience as a trainee Software Engineer.
+              Hi! I'm <strong>Janani Withana</strong>, a <strong>Mobile Developer (React Native)</strong> with 1+ year of industry experience building scalable, production-ready mobile applications for both <strong>iOS and Android</strong> platforms.
             </p>
             <br/>
             <p tabIndex="0">
-              My passion spans mobile and web development, creating intuitive interfaces and robust backend systems. 
-              I specialize in immersive mobile apps and responsive web solutions, blending technical expertise with creative innovation.
+              Currently working as an <strong>Associate Software Engineer (Mobile – React Native)</strong> at WebAppClouds LLC, I specialize in cross-platform mobile development using <strong>React Native</strong>, JavaScript, and TypeScript. 
+              As a <strong>Mobile Developer (React Native)</strong>, I design and develop reusable, scalable UI components, implement <strong>React Navigation</strong>, REST API integrations, and client-side state management for mobile applications.
             </p>
             <br/>
             <p tabIndex="0">
-              I thrive on tackling complex challenges and delivering impactful solutions that enhance user experiences and drive business success.
-              I like to code things from scratch and enjoy bringing ideas to life in the browser.
+              My expertise as a <strong>Mobile Developer (React Native)</strong> includes secure authentication systems, Firebase messaging, payment integrations, and delivering consumer-facing and enterprise mobile applications. 
+              I thrive on tackling complex challenges in mobile development, collaborating with cross-functional teams, and maintaining high standards of performance, security, and code quality. 
+              Passionate about continuous learning and building impactful <strong>mobile products</strong> that enhance user experiences on iOS and Android platforms.
             </p>
 
             {/* Resume button */}
@@ -50,7 +51,7 @@ const AboutPage = () => {
           </div>
 
           <div className="dp" data-aos="fade-up">
-            <img src={ProfileImage} alt="Vinod Jangid" tabIndex="0" aria-label="image of vinod" />
+            <img src={ProfileImage} alt="Janani Withana" tabIndex="0" aria-label="image of janani" />
           </div>
         </div>
       </div>
