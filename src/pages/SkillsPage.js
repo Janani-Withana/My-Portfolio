@@ -11,8 +11,6 @@ import nodeLogo from '../Assets/png/nodelogo.png';
 import gitLogo from '../Assets/png/gitlogo.png';
 import androidStudioLogo from '../Assets/png/androidstudiologo.png';
 import xcodeLogo from '../Assets/png/xcodelogo.png';
-import htmlLogo from '../Assets/png/htmllogo.png';
-import cssLogo from '../Assets/png/csslogo.png';
 
 const SkillsPage = () => {
   return (
