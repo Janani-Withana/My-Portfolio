@@ -20,6 +20,7 @@ import prj2Image from '../Assets/webp/ThilinaInstitute.png';
 import prj3Image from '../Assets/webp/MovieTicketBooking2.jpg';
 import prj4Image from '../Assets/webp/SriGoviyaFlyer.png';
 import prj5Image from '../Assets/webp/SnapMindFlyer.png';
+import prj6Image from '../Assets/webp/ChargeMapFlyer.jpg';
 
 const projects = [
   {
@@ -90,7 +91,7 @@ const projects = [
     description: 'A cross-platform mobile app for discovering and crowdsourcing EV charging station locations with real-time geolocation and map navigation. Features secure JWT-based authentication with Google OAuth, OTP verification, and modular architecture using Context API for state management.',
     // githubLink: '', // Add GitHub link if available
     //liveLink: '',
-    imageSrc: null,
+    imageSrc: prj6Image,
     category: 'Mobile',
     technologies: ['React Native', 'JavaScript', 'REST APIs', 'JWT', 'Google OAuth', 'Context API']
   },
