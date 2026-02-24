@@ -67,9 +67,36 @@ const ProjectCard = ({ project, index }) => {
                   <img src={githubSVG} alt="github redirect button" />
                 </a>
               )}
-              {project.liveLink && (
+              {project.playStoreLink && (
+                <a href={project.playStoreLink} target="_blank" rel="noopener noreferrer" className="cta cta-android" aria-label={`${project.title} on Google Play`}>
+                  <span>Android</span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </a>
+              )}
+              {project.appStoreLink && (
+                <a href={project.appStoreLink} target="_blank" rel="noopener noreferrer" className="cta cta-ios" aria-label={`${project.title} on App Store`}>
+                  <span>iOS</span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </a>
+              )}
+              {project.liveLink && !project.playStoreLink && !project.appStoreLink && (
                 <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="cta" aria-label={`Visit ${project.title} live`}>
                   <span>Live view</span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </a>
+              )}
+              {project.liveLink && (project.playStoreLink || project.appStoreLink) && (
+                <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="cta" aria-label={`Visit ${project.title} live`}>
+                  <span>Web</span>
                   <svg viewBox="0 0 13 10" height="10px" width="15px">
                     <path d="M1,5 L11,5"></path>
                     <polyline points="8 1 12 5 8 9"></polyline>
@@ -79,10 +106,18 @@ const ProjectCard = ({ project, index }) => {
             </div>
           </div>
           {project.imageSrc && (
-            <div className="image-div" onClick={openImageModal} style={{ cursor: 'pointer' }}>
-              <div className="image-overlay"></div>
-              <div className="image-preview-hint">Click to preview</div>
-              <img src={project.imageSrc} alt={`${project.title} preview`} />
+            <div
+              className="image-div"
+              onClick={openImageModal}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openImageModal(); } }}
+              role="button"
+              tabIndex={0}
+              style={{ cursor: 'pointer' }}
+              aria-label={`View full size ${project.title} preview`}
+            >
+              <div className="image-overlay" aria-hidden="true" />
+              <span className="image-preview-hint">Tap to preview</span>
+              <img src={project.imageSrc} alt={`${project.title} preview`} loading="lazy" />
             </div>
           )}
         </div>
@@ -115,6 +150,8 @@ ProjectCard.propTypes = {
     description: PropTypes.string.isRequired,
     githubLink: PropTypes.string,
     liveLink: PropTypes.string,
+    playStoreLink: PropTypes.string,
+    appStoreLink: PropTypes.string,
     imageSrc: PropTypes.string,
     category: PropTypes.string,
     technologies: PropTypes.arrayOf(PropTypes.string)
