@@ -1950,9 +1950,15 @@ noscript{
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
+    max-width: 100%;
     height: 100%;
     padding-top: 40px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
     background: rgba(0, 0, 0, 0.9);
     display: flex;
     align-items: center;
@@ -2065,6 +2071,184 @@ noscript{
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     border-color: rgba(107, 197, 248, 0.3);
+}
+
+/* npm Open Source package cards */
+.npm-package-wrapper {
+    width: 100%;
+}
+
+.npm-package-card {
+    position: relative;
+    width: 100%;
+    border-radius: 24px;
+    padding: 2px;
+    background: linear-gradient(135deg, rgba(204, 53, 52, 0.45), rgba(107, 197, 248, 0.35), rgba(207, 89, 230, 0.4));
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.npm-package-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.npm-package-card-glow {
+    position: absolute;
+    inset: -40%;
+    background: radial-gradient(ellipse at 30% 20%, rgba(204, 53, 52, 0.15), transparent 50%),
+        radial-gradient(ellipse at 70% 80%, rgba(107, 197, 248, 0.12), transparent 45%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.npm-package-card-inner {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(165deg, #14141f 0%, #0d0d14 100%);
+    border-radius: 22px;
+    padding: 28px 28px 26px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.npm-package-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.npm-package-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: fira code, ui-monospace, monospace;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #cb3837;
+    background: rgba(203, 56, 55, 0.12);
+    border: 1px solid rgba(203, 56, 55, 0.35);
+    padding: 6px 14px;
+    border-radius: 999px;
+}
+
+.npm-package-badge-icon {
+    display: flex;
+    align-items: center;
+}
+
+.npm-package-badge-img {
+    display: block;
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.npm-package-scope {
+    font-size: 1.3rem;
+    font-family: fira code, ui-monospace, monospace;
+    color: var(--color-gray);
+    opacity: 0.85;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.npm-package-scope:hover,
+.npm-package-scope:focus-visible {
+    color: var(--color-light-blue);
+    opacity: 1;
+    outline: none;
+}
+
+.npm-package-name {
+    font-family: fira code, ui-monospace, monospace;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin: 0 0 8px 0;
+    line-height: 1.25;
+    word-break: break-word;
+}
+
+.npm-package-fullname {
+    font-family: fira code, ui-monospace, monospace;
+    font-size: 1.3rem;
+    color: var(--color-light-blue);
+    margin: 0 0 16px 0;
+    opacity: 0.95;
+    word-break: break-all;
+}
+
+.npm-package-description {
+    font-size: 1.55rem;
+    color: var(--color-gray);
+    line-height: 1.65;
+    margin: 0 0 18px 0;
+}
+
+.npm-package-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.npm-package-tag {
+    font-size: 1.15rem;
+    padding: 5px 12px;
+    border-radius: 8px;
+    background: rgba(107, 197, 248, 0.08);
+    border: 1px solid rgba(107, 197, 248, 0.2);
+    color: var(--color-light-blue);
+    font-weight: 500;
+}
+
+.npm-package-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, rgba(203, 56, 55, 0.25), rgba(107, 197, 248, 0.2));
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.npm-package-cta:hover {
+    background: linear-gradient(90deg, rgba(203, 56, 55, 0.4), rgba(107, 197, 248, 0.35));
+    transform: translateX(4px);
+}
+
+.npm-package-cta svg {
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .npm-package-card-inner {
+        padding: 20px 18px;
+    }
+    .npm-package-name {
+        font-size: 1.8rem;
+    }
+    .npm-package-fullname {
+        font-size: 1.15rem;
+    }
+    .npm-package-description {
+        font-size: 1.35rem;
+    }
+    .npm-package-cta {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 /* projects ends */

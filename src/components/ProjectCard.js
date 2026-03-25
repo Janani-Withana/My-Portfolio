@@ -8,19 +8,32 @@ const ProjectCard = ({ project, index }) => {
 
   const openImageModal = () => {
     setIsImageModalOpen(true);
-    document.body.style.overflow = 'hidden';
   };
 
   const closeImageModal = () => {
     setIsImageModalOpen(false);
-    document.body.style.overflow = 'unset';
   };
+
+  // Lock page scroll while modal is open; remove inline overflow on close (avoids stray scrollbar from `unset`)
+  useEffect(() => {
+    if (!isImageModalOpen) return undefined;
+
+    const html = document.documentElement;
+    const body = document.body;
+
+    html.style.overflow = 'hidden';
+    body.style.overflow = 'hidden';
+
+    return () => {
+      html.style.removeProperty('overflow');
+      body.style.removeProperty('overflow');
+    };
+  }, [isImageModalOpen]);
 
   useEffect(() => {
     const handleEscape = (e) => {
       if (e.key === 'Escape' && isImageModalOpen) {
         setIsImageModalOpen(false);
-        document.body.style.overflow = 'unset';
       }
     };
 

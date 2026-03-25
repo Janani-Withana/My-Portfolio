@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
+import NpmPackageCard from '../components/NpmPackageCard';
 import '../formatted.css'; // Import your CSS file for styling
 
 // Importing images
@@ -14,15 +15,42 @@ import prj6Favicon from '../Assets/webp/ChargeMapLogo.png';
 import prj7Favicon from '../Assets/webp/IMSLogo.png';
 import prj8Favicon from '../Assets/webp/IbsonsChoiceCafeLogo.png';
 import prj9Favicon from '../Assets/webp/EcoRentalsLogo.png';
+import lilyLankaFavicon from '../Assets/webp/LilyLanka.png';
 
-import prj1Image from '../Assets/webp/NasaLandingPage.PNG';
+import cosmoScopeBanner from '../Assets/webp/CosmoScopeBanner.png';
 import prj2Image from '../Assets/webp/ThilinaInstitute.png';
 import prj3Image from '../Assets/webp/MovieTicketBooking2.jpg';
 import prj4Image from '../Assets/webp/SriGoviyaFlyer.png';
 import prj5Image from '../Assets/webp/SnapMindFlyer.png';
 import prj6Image from '../Assets/webp/ChargeMapFlyer.jpg';
+import lilyLankaFlyerImage from '../Assets/webp/LilyLankaFlyer.png';
 
 const projects = [
+  {
+    boxClass: 'project-box3',
+    boxId: 'project-box3',
+    faviconSrc: prj6Favicon,
+    title: 'WAC Charge Map',
+    description: 'A cross-platform mobile app for discovering and crowdsourcing EV charging station locations with real-time geolocation and map navigation. Features secure JWT-based authentication with Google OAuth, OTP verification, and modular architecture using Context API for state management.',
+    // githubLink: '', // Add GitHub link if available
+    playStoreLink: 'https://play.google.com/store/apps/details?id=com.webappclouds.evmapdev',
+    appStoreLink: 'https://apps.apple.com/lk/app/wac-charge-map/id6753712398',
+    imageSrc: prj6Image,
+    category: 'Mobile',
+    technologies: ['React Native', 'JavaScript', 'REST APIs', 'JWT', 'Google OAuth', 'Context API']
+  },
+  {
+    boxClass: 'project-box10',
+    boxId: 'project-box-lily-lanka',
+    faviconSrc: lilyLankaFavicon,
+    title: 'Lily Lanka',
+    description: 'A production-grade React Native cross-platform tourism management app for Sri Lanka. Features bookings, tour management, itineraries, and real-time location-based experiences with reusable UI, scalable navigation, and RESTful API integrations.',
+    playStoreLink: 'https://play.google.com/store/apps/details?id=com.lilylanka_mobile',
+    appStoreLink: 'https://apps.apple.com/lk/app/lily-lanka/id6760127534',
+    imageSrc: lilyLankaFlyerImage,
+    category: 'Mobile',
+    technologies: ['React Native', 'JavaScript', 'REST APIs', 'Maps', 'Navigation']
+  },
   {
     boxClass: 'project-box1',
     boxId: 'project-box1',
@@ -47,19 +75,7 @@ const projects = [
     category: 'Mobile',
     technologies: ['Kotlin', 'Android', 'Gemini Pro API']
   },
-  {
-    boxClass: 'project-box3',
-    boxId: 'project-box3',
-    faviconSrc: prj6Favicon,
-    title: 'WAC Charge Map',
-    description: 'A cross-platform mobile app for discovering and crowdsourcing EV charging station locations with real-time geolocation and map navigation. Features secure JWT-based authentication with Google OAuth, OTP verification, and modular architecture using Context API for state management.',
-    // githubLink: '', // Add GitHub link if available
-    playStoreLink: 'https://play.google.com/store/apps/details?id=com.webappclouds.evmapdev',
-    appStoreLink: 'https://apps.apple.com/lk/app/wac-charge-map/id6753712398',
-    imageSrc: prj6Image,
-    category: 'Mobile',
-    technologies: ['React Native', 'JavaScript', 'REST APIs', 'JWT', 'Google OAuth', 'Context API']
-  },
+ 
   {
     boxClass: 'project-box4',
     boxId: 'project-box4',
@@ -100,13 +116,13 @@ const projects = [
     boxClass: 'project-box7',
     boxId: 'project-box7',
     faviconSrc: prj1Favicon,
-    title: 'NASA API Portal',
-    description: "A responsive website built using React and Material UI. It utilizes NASA's public APIs to showcase intriguing images from space, including APOD images and Mars Rover photos.",
-    githubLink: 'https://github.com/Janani-Withana/NasaApiPortal',
-    liveLink: 'https://nasa-api-portal.vercel.app/apod',
-    imageSrc: prj1Image,
+    title: 'CosmoScope',
+    description: 'A modern, interactive space exploration web app built with React and Vite, powered by NASA public APIs. Explore Astronomy Picture of the Day, Mars Rover imagery, Earth imagery, and more—with animated, responsive UI using Tailwind CSS and Framer Motion.',
+    githubLink: 'https://github.com/Janani-Withana/CosmoScope',
+    liveLink: 'https://cosmo-scope.vercel.app/',
+    imageSrc: cosmoScopeBanner,
     category: 'Web',
-    technologies: ['React', 'Material UI', 'NASA API']
+    technologies: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion', 'NASA API']
   },
   {
     boxClass: 'project-box8',
@@ -132,12 +148,52 @@ const projects = [
     category: 'Web',
     technologies: ['HTML', 'PHP', 'CSS', 'SQL', 'Stripe']
   },
+  {
+    boxId: 'npm-otp-fields',
+    shortName: 'react-native-otp-fields',
+    displayName: '@codehogs/react-native-otp-fields',
+    description: 'Configurable OTP input fields for React Native with masking, auto-focus, and validation—built for smooth auth and verification flows.',
+    npmLink: 'https://www.npmjs.com/package/@codehogs/react-native-otp-fields',
+    category: 'OpenSource',
+    projectType: 'npm',
+    technologies: ['React Native', 'OTP', 'UI']
+  },
+  {
+    boxId: 'npm-theme-engine',
+    shortName: 'react-native-theme-engine',
+    displayName: '@codehogs/react-native-theme-engine',
+    description: 'A flexible theme engine for React Native apps—manage light/dark modes, tokens, and runtime theme switching with minimal boilerplate.',
+    npmLink: 'https://www.npmjs.com/package/@codehogs/react-native-theme-engine',
+    category: 'OpenSource',
+    projectType: 'npm',
+    technologies: ['React Native', 'Theming', 'Context']
+  },
+  {
+    boxId: 'npm-country-phone',
+    shortName: 'rn-country-phone-codes',
+    displayName: '@codehogs/rn-country-phone-codes',
+    description: 'Country dial codes and phone utilities for React Native—pickers, formatting helpers, and consistent international input handling.',
+    npmLink: 'https://www.npmjs.com/package/@codehogs/rn-country-phone-codes',
+    category: 'OpenSource',
+    projectType: 'npm',
+    technologies: ['React Native', 'i18n', 'Phone']
+  },
+  {
+    boxId: 'npm-form-builder',
+    shortName: 'form-auto-builder',
+    displayName: '@codehogs/form-auto-builder',
+    description: 'Schema-driven form builder utilities to generate and validate forms with less manual wiring—ideal for dashboards and admin flows.',
+    npmLink: 'https://www.npmjs.com/package/@codehogs/form-auto-builder',
+    category: 'OpenSource',
+    projectType: 'npm',
+    technologies: ['JavaScript', 'Forms', 'Validation']
+  },
 ];
 
 const PortfolioPage = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const categories = ['All', 'Mobile', 'Web'];
+  const categories = ['All', 'Mobile', 'Web', 'OpenSource'];
 
   const filteredProjects = activeFilter === 'All' 
     ? projects 
@@ -171,9 +227,13 @@ const PortfolioPage = () => {
         {/* Projects Grid */}
         <div className="project-boxes-div">
           {filteredProjects.length > 0 ? (
-            filteredProjects.map((project, index) => (
-              <ProjectCard key={project.boxId} project={project} index={index} />
-            ))
+            filteredProjects.map((project, index) =>
+              project.projectType === 'npm' ? (
+                <NpmPackageCard key={project.boxId} project={project} index={index} />
+              ) : (
+                <ProjectCard key={project.boxId} project={project} index={index} />
+              )
+            )
           ) : (
             <div className="no-projects-message" data-aos="fade-up">
               <p>No {activeFilter.toLowerCase()} projects to display.</p>
