@@ -127,6 +127,17 @@ const HomePage = () => {
             <p className="jello">I</p>
           </div>
           <div>
+            <p className="jello">d</p>
+            <p className="jello">e</p>
+            <p className="jello">s</p>
+            <p className="jello">i</p>
+            <p className="jello">g</p>
+            <p className="jello">n</p>
+          </div>
+          <div>
+            <p className="jello">&</p>
+          </div>
+          <div>
             <p className="jello">c</p>
             <p className="jello">o</p>
             <p className="jello">d</p>
@@ -138,28 +149,28 @@ const HomePage = () => {
             <p className="jello">r</p>
           </div>
           <div>
-            <p className="jello">w</p>
-            <p className="jello">e</p>
-            <p className="jello">b</p>
-          </div>
-          <div>
-            <p className="jello">&</p>
-          </div>
-          <div>
             <p className="jello">m</p>
             <p className="jello">o</p>
             <p className="jello">b</p>
             <p className="jello">i</p>
             <p className="jello">l</p>
             <p className="jello">e</p>
+          </div>
+          <div>
+            <p className="jello">&</p>
+          </div>
+          <div>
+            <p className="jello">w</p>
+            <p className="jello">e</p>
+            <p className="jello">b</p>
             <p className="jello">.</p>
           </div>
 
         </article>
         <p id="info-para" data-aos="fade-up" data-aos-delay="600">
-          <strong>Mobile Developer (React Native)</strong> specializing in iOS and Android mobile applications. I enjoy creating engaging UI, building scalable cross-platform solutions, and bringing products to life.
+          <strong>Mobile Developer (React Native)</strong> and <strong>UI/UX designer</strong>—I ship iOS and Android apps and shape interfaces with user flows, visual systems, and <strong>Figma prototypes</strong> before they go to production.
           <br /><br />
-          As a <strong>Mobile Developer (React Native)</strong>, I value simplicity in content, clarity in design, and thoughtful user interactions, ensuring a seamless user experience across both platforms.
+          I care about clarity in layout, accessible patterns, and interactions that feel natural—whether I'm polishing a screen or debugging the code behind it.
         </p>
         <div className="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
           <a href="mailto:jananijayasuriya330@gmail.com" tabIndex="-1">

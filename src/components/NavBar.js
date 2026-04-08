@@ -48,23 +48,84 @@ const NavBar = () => {
         </div>
         <div className="navbar-tabs" id="navbar-tabs">
           <ul className="navbar-tabs-ul">
-            <li className="home activeThistab navbar-tabs-li">
-              <Link to="home" tabIndex="0" smooth={true} duration={100} aria-label="Home menu button">&#60;/Home&#62;</Link>
+            <li className="home navbar-tabs-li">
+              <Link
+                to="home"
+                tabIndex="0"
+                spy
+                smooth
+                duration={100}
+                offset={-100}
+                activeClass="activeThistab"
+                aria-label="Home menu button"
+              >
+                &#60;/Home&#62;
+              </Link>
             </li>
             <li className="about navbar-tabs-li">
-              <Link to="about" smooth={true} duration={300} aria-label="About menu button">&#60;/AboutMe&#62;</Link>
+              <Link
+                to="about"
+                spy
+                smooth
+                duration={300}
+                offset={-100}
+                activeClass="activeThistab"
+                aria-label="About menu button"
+              >
+                &#60;/AboutMe&#62;
+              </Link>
             </li>
             <li className="experience navbar-tabs-li">
-              <Link to="experience" smooth={true} duration={400} aria-label="Experience menu button">&#60;/Experience&#62;</Link>
+              <Link
+                to="experience"
+                spy
+                smooth
+                duration={400}
+                offset={-100}
+                activeClass="activeThistab"
+                aria-label="Experience menu button"
+              >
+                &#60;/Experience&#62;
+              </Link>
             </li>
             <li className="skills navbar-tabs-li">
-              <Link to="skills" smooth={true} duration={500} aria-label="Skills menu button">&#60;/Skills&#62;</Link>
+              <Link
+                to="skills"
+                spy
+                smooth
+                duration={500}
+                offset={-100}
+                activeClass="activeThistab"
+                aria-label="Skills menu button"
+              >
+                &#60;/Skills&#62;
+              </Link>
             </li>
             <li className="projects navbar-tabs-li">
-              <Link to="projects" smooth={true} duration={700} aria-label="Projects menu button">&#60;/Projects&#62;</Link>
+              <Link
+                to="projects"
+                spy
+                smooth
+                duration={700}
+                offset={-100}
+                activeClass="activeThistab"
+                aria-label="Projects menu button"
+              >
+                &#60;/Projects&#62;
+              </Link>
             </li>
-            <li className="projects navbar-tabs-li">
-              <Link to="footer" smooth={true} duration={100} aria-label="Projects menu button">&#60;/Contact&#62;</Link>
+            <li className="contact navbar-tabs-li">
+              <Link
+                to="footer"
+                spy
+                smooth
+                duration={100}
+                offset={-100}
+                activeClass="activeThistab"
+                aria-label="Contact menu button"
+              >
+                &#60;/Contact&#62;
+              </Link>
             </li>
           </ul>
         </div>
@@ -82,23 +143,89 @@ const NavBar = () => {
 
       <div className="mobiletogglemenu" id="mobiletogglemenu">
         <ul className="mobile-navbar-tabs-ul" id="mobile-ul">
-          <li id="home-mobile-tab" className="mobile-navbar-tabs-li home activeThismobiletab">
-            <Link to="home" tabIndex="0" aria-label="Home menu button">&#60;/Home&#62;</Link>
+          <li id="home-mobile-tab" className="mobile-navbar-tabs-li home">
+            <Link
+              to="home"
+              tabIndex="0"
+              spy
+              smooth
+              duration={100}
+              offset={-80}
+              activeClass="activeThismobiletab"
+              aria-label="Home menu button"
+            >
+              &#60;/Home&#62;
+            </Link>
           </li>
           <li id="aboutme-mobile-tab" className="mobile-navbar-tabs-li about">
-            <Link to="about" tabIndex="0" aria-label="about menu button">&#60;/AboutMe&#62;</Link>
+            <Link
+              to="about"
+              tabIndex="0"
+              spy
+              smooth
+              duration={300}
+              offset={-80}
+              activeClass="activeThismobiletab"
+              aria-label="about menu button"
+            >
+              &#60;/AboutMe&#62;
+            </Link>
           </li>
           <li id="experience-mobile-tab" className="mobile-navbar-tabs-li experience">
-            <Link to="experience" tabIndex="0" aria-label="experience menu button">&#60;/Experience&#62;</Link>
+            <Link
+              to="experience"
+              tabIndex="0"
+              spy
+              smooth
+              duration={400}
+              offset={-80}
+              activeClass="activeThismobiletab"
+              aria-label="experience menu button"
+            >
+              &#60;/Experience&#62;
+            </Link>
           </li>
           <li id="skills-mobile-tab" className="mobile-navbar-tabs-li skills">
-            <Link to="skills" tabIndex="0" aria-label="skills menu button">&#60;/Skills&#62;</Link>
+            <Link
+              to="skills"
+              tabIndex="0"
+              spy
+              smooth
+              duration={500}
+              offset={-80}
+              activeClass="activeThismobiletab"
+              aria-label="skills menu button"
+            >
+              &#60;/Skills&#62;
+            </Link>
           </li>
           <li id="projects-mobile-tab" className="mobile-navbar-tabs-li projects">
-            <Link to="projects" tabIndex="0" aria-label="projects menu button">&#60;/Projects&#62;</Link>
+            <Link
+              to="projects"
+              tabIndex="0"
+              spy
+              smooth
+              duration={700}
+              offset={-80}
+              activeClass="activeThismobiletab"
+              aria-label="projects menu button"
+            >
+              &#60;/Projects&#62;
+            </Link>
           </li>
-          <li id="projects-mobile-tab" className="mobile-navbar-tabs-li projects">
-            <Link to="footer" tabIndex="0" aria-label="projects menu button">&#60;/Contact&#62;</Link>
+          <li id="contact-mobile-tab" className="mobile-navbar-tabs-li contact">
+            <Link
+              to="footer"
+              tabIndex="0"
+              spy
+              smooth
+              duration={100}
+              offset={-80}
+              activeClass="activeThismobiletab"
+              aria-label="Contact menu button"
+            >
+              &#60;/Contact&#62;
+            </Link>
           </li>
         </ul>
       </div>

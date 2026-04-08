@@ -23,18 +23,19 @@ const AboutPage = () => {
         <div className="info-dp-section">
           <div className="about-info">
             <p tabIndex="0">
-              Hi! I'm <strong>Janani Withana</strong>, a <strong>Mobile Developer (React Native)</strong> with 1+ year of industry experience building scalable, production-ready mobile applications for both <strong>iOS and Android</strong> platforms.
+              Hi! I'm <strong>Janani Withana</strong>, a <strong>Mobile Developer (React Native)</strong> with 2+ year of industry experience building scalable, production-ready mobile applications for both <strong>iOS and Android</strong> platforms. 
+              I also practice <strong>UI/UX design</strong>—from user flows and wireframes to high-fidelity screens and <strong>interactive Figma prototypes</strong>—so interfaces stay coherent before and after they ship.
             </p>
             <br/>
             <p tabIndex="0">
               Currently working as an <strong>Associate Software Engineer (Mobile – React Native)</strong> at WebAppClouds LLC, I specialize in cross-platform mobile development using <strong>React Native</strong>, JavaScript, and TypeScript. 
-              As a <strong>Mobile Developer (React Native)</strong>, I design and develop reusable, scalable UI components, implement <strong>React Navigation</strong>, REST API integrations, and client-side state management for mobile applications.
+              I design and build reusable UI components, implement <strong>React Navigation</strong>, REST API integrations, and client-side state management. On the design side, I focus on <strong>clear information architecture</strong>, accessible patterns, and consistent visual systems that align with product goals.
             </p>
             <br/>
             <p tabIndex="0">
-              My expertise as a <strong>Mobile Developer (React Native)</strong> includes secure authentication systems, Firebase messaging, payment integrations, and delivering consumer-facing and enterprise mobile applications. 
-              I thrive on tackling complex challenges in mobile development, collaborating with cross-functional teams, and maintaining high standards of performance, security, and code quality. 
-              Passionate about continuous learning and building impactful <strong>mobile products</strong> that enhance user experiences on iOS and Android platforms.
+              My technical strengths include secure authentication, Firebase messaging, payment integrations, and delivering consumer-facing and enterprise apps. 
+              I thrive on complex mobile challenges, collaboration with cross-functional teams, and high standards for performance, security, and code quality—paired with a mindset that <strong>good UX</strong> is part of the build, not an afterthought. 
+              I'm always learning and shipping <strong>mobile products</strong> that feel as thoughtful as they are reliable.
             </p>
 
             {/* Resume button */}

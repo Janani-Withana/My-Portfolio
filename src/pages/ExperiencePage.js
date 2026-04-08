@@ -4,7 +4,7 @@ import React from 'react';
 import '../formatted.css';
 
 // Import company logos
-import wacLogo from '../Assets/webp/WACLogo.jpeg';
+import wacLogo from '../Assets/webp/WACLogo.png';
 import lilyLankaLogo from '../Assets/webp/LilyLanka.png';
 
 const experiences = [

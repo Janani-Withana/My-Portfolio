@@ -3,8 +3,15 @@ import PropTypes from 'prop-types';
 import githubSVG from '../Assets/svg/github.svg'
 import '../formatted.css'; // Import your CSS file for styling
 
+const categoryClassName = (category) => {
+  if (!category || typeof category !== 'string') return '';
+  const slug = category.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  return slug ? `category-${slug}` : '';
+};
+
 const ProjectCard = ({ project, index }) => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+  const badgeClass = categoryClassName(project.category);
 
   const openImageModal = () => {
     setIsImageModalOpen(true);
@@ -58,7 +65,7 @@ const ProjectCard = ({ project, index }) => {
             <div className="project-header">
               <img src={project.faviconSrc} alt={`${project.title} favicon`} className="faviconforProject" />
               {project.category && (
-                <span className={`project-category-badge category-${project.category.toLowerCase()}`}>
+                <span className={`project-category-badge ${badgeClass}`}>
                   {project.category}
                 </span>
               )}
@@ -93,6 +100,21 @@ const ProjectCard = ({ project, index }) => {
                 <a href={project.appStoreLink} target="_blank" rel="noopener noreferrer" className="cta cta-ios" aria-label={`${project.title} on App Store`}>
                   <span>iOS</span>
                   <svg viewBox="0 0 13 10" height="10px" width="15px">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </a>
+              )}
+              {project.figmaLink && (
+                <a
+                  href={project.figmaLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta cta-figma"
+                  aria-label={`Open ${project.title} Figma prototype`}
+                >
+                  <span>Figma prototype</span>
+                  <svg viewBox="0 0 13 10" height="10px" width="15px" aria-hidden="true">
                     <path d="M1,5 L11,5"></path>
                     <polyline points="8 1 12 5 8 9"></polyline>
                   </svg>
@@ -162,6 +184,7 @@ ProjectCard.propTypes = {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     githubLink: PropTypes.string,
+    figmaLink: PropTypes.string,
     liveLink: PropTypes.string,
     playStoreLink: PropTypes.string,
     appStoreLink: PropTypes.string,
