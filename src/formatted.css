@@ -923,7 +923,7 @@ noscript{
     font-weight: 600;
 }
 .dp{
-    width: 40%;
+    width: 35%;
     display: flex;
     align-items: flex-start;
     justify-content:center;
@@ -931,7 +931,7 @@ noscript{
     transition-duration: .5s;
 }
 .dp img {
-    width: 280px;
+    width: 260px;
     height: 350px;
     display: block;
     position: relative;
