@@ -932,7 +932,7 @@ noscript{
 }
 .dp img {
     width: 280px;
-    height: 280px;
+    height: 320px;
     display: block;
     position: relative;
     z-index: 1;
